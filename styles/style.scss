@@ -1,0 +1,26 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #3f3e3e;
+    font-family: "Montserrat", sans-serif;
+}
+h1 {
+    font-size: 2.5rem;
+    font-family: "Lobster",  sans-serif;
+}
+a{
+    color: #3f3e3e;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: lighter;
+}
+
+@import "home";
+
