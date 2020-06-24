@@ -1,0 +1,29 @@
+.sidebar{
+    display: flex;
+    background: #f1f1f1;
+    border-radius: 18px;
+    height: 80vh;
+    padding: 0vw 2vw;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    div{
+        margin: auto;
+        text-align: center;
+    }
+    
+}
+.body{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 10% 40% 40% 10%;
+    h1{
+        grid-column: 2/3;
+    }
+}
+.content{
+    margin:  auto 0;
+    display:flex;
+    justify-content: space-between;
+    grid-column: 2/3;
+}

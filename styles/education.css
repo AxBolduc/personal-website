@@ -1,0 +1,48 @@
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f1f1f1;
+  border-radius: 18px;
+  height: 80vh;
+  padding: 0vw 2vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sidebar div {
+  margin: auto;
+  text-align: center;
+}
+
+.body {
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  -ms-grid-columns: 10% 40% 40% 10%;
+      grid-template-columns: 10% 40% 40% 10%;
+}
+
+.body h1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.content {
+  margin: auto 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+/*# sourceMappingURL=education.css.map */
