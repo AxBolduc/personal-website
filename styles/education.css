@@ -23,6 +23,7 @@
 }
 
 .body {
+  font-family: "Rubik";
   background: #f1f1f1;
   border-radius: 18px;
   display: -ms-grid;
@@ -99,6 +100,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.statistics li {
+  margin: 10px 0;
 }
 
 .awards {
