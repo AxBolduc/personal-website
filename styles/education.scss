@@ -2,10 +2,12 @@
     display: flex;
     background: #f1f1f1;
     border-radius: 18px;
+    width: 17.5%;
     height: 80vh;
     padding: 0vw 2vw;
     flex-direction: column;
     justify-content: space-around;
+    flex-shrink:2;
     
     div{
         margin: auto;
@@ -14,16 +16,71 @@
     
 }
 .body{
+
+    background: #f1f1f1;
+    border-radius: 18px;
     display: grid;
     width: 80%;
-    grid-template-columns: 10% 40% 40% 10%;
-    h1{
-        grid-column: 2/3;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 10% 85%;
+    gap: 5% 0;
+
+}
+.body-header{
+    display: grid;
+    grid-column: 2/3;
+    font-size: 4rem;
+    align-items: center;
+}
+
+.body-content{
+    display:grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    grid-template-columns: 50% 50%;
+    
+    h3{
+        font-size: 5rem;
+        margin-bottom: 10px;
+        text-decoration: underline;
+    }
+    
+    li{
+        font-size: 4rem;
+    }
+
+}
+
+.scores{
+    grid-column: 2;
+    grid-row:1/2;
+    li{
+        margin: 15px 0;
     }
 }
+
+.body-left{
+    display: grid;
+    grid-column: 1;
+    grid-template-rows: 50% 50%;
+}
+
+.statistics{
+    display:flex;
+    flex-direction: column;
+}
+.awards{
+    display: flex;
+    flex-direction: column;
+    grid-row: 2;
+}
+
+
 .content{
     margin:  auto 0;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     grid-column: 2/3;
+
+    
 }
