@@ -5,7 +5,6 @@
   background: #f1f1f1;
   border-radius: 18px;
   width: 17.5%;
-  height: 80vh;
   padding: 0vw 2vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -22,43 +21,47 @@
   text-align: center;
 }
 
+.sidebar img {
+  max-width: 100%;
+}
+
 .body {
   font-family: "Rubik";
   background: #f1f1f1;
   border-radius: 18px;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3rem;
   width: 80%;
-  -ms-grid-columns: 5% 90% 5%;
-      grid-template-columns: 5% 90% 5%;
-  -ms-grid-rows: 10% 85%;
-      grid-template-rows: 10% 85%;
-  gap: 5% 0;
 }
 
 .body-header {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  font-size: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 2.5rem;
+  align-items: center;
 }
 
 .body-content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .body-content h3 {
@@ -67,16 +70,12 @@
   text-decoration: underline;
 }
 
-.body-content li {
-  font-size: 4rem;
+.body-content ul {
+  list-style: none;
 }
 
-.scores {
-  -ms-grid-column: 2;
-  grid-column: 2;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1/2;
+.body-content li {
+  font-size: 4rem;
 }
 
 .scores li {
@@ -84,12 +83,16 @@
 }
 
 .body-left {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .statistics {
@@ -114,20 +117,67 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-grid-row: 2;
-  grid-row: 2;
 }
 
 .content {
-  margin: auto 0;
+  width: 85%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
+  height: 80vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .content .sidebar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+    padding: 2rem 0rem;
+  }
+  .content .sidebar h2 {
+    font-size: 3rem;
+  }
+  .content .sidebar img {
+    display: none;
+  }
+  .content .body {
+    height: 90%;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    padding: 2rem 0rem;
+  }
+  .sidebar h2 {
+    font-size: 2.5rem;
+  }
+  .body {
+    overflow-y: scroll;
+  }
+  .body-header {
+    display: none;
+  }
+  .body-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=education.css.map */

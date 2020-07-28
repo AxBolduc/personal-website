@@ -1,26 +1,121 @@
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    color: #3f3e3e;
-    font-family: "Montserrat", sans-serif;
+body {
+  color: #3f3e3e;
+  font-family: "Montserrat", sans-serif;
 }
 h1 {
-    font-size: 2.5rem;
-    font-family: "Lobster",  sans-serif;
+  font-size: 2.5rem;
+  font-family: "Lobster", sans-serif;
 }
-a{
-    color: #3f3e3e;
-    text-decoration: none;
-    font-size: 2.5rem;
-    font-weight: lighter;
+a {
+  color: #3f3e3e;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: lighter;
+}
+.home {
+  background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #bebebe 100%);
 }
 
-@import "home";
+.nav-container {
+  background: #b9b8b8;
 
+  svg {
+    height: 50%;
+    width: auto;
+    display: none;
+  }
+}
+.showcase{
+    display: flex;
+    justify-content: center;
+    height: 85vh;
+}
+
+nav {
+  margin: auto;
+  height: 10vh;
+  padding: 3rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 30%;
+  }
+  #name {
+    font-size: 4rem;
+    font-family: "Lobster", cursive;
+  }
+}
+.footer{
+    background: #B9B8B8;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    footer{
+        width: 80%;
+        margin: auto;
+        min-height: 5vh;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+
+
+        img{
+            width:35px;
+        }
+        p{
+            display: flex;
+            flex:5;
+        }
+        ul{
+            display:flex;
+            justify-content: space-between;
+            flex: .5;
+            list-style: none;
+        }
+    }
+    
+}
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 45%;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-container {
+    ul {
+      flex-direction: column;
+      background-color: #f1f1f1;
+      height: 85vh;
+      width: 100%;
+      position: absolute;
+      top: 10vh;
+      left: -100%;
+      align-items: center;
+      transition: all 0.5s ease-out;
+    }
+    .nav.open {
+      transform: translateX(100%);
+    }
+
+    svg {
+      display: inline-block;
+    }
+  }
+}

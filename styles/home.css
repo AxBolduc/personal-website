@@ -1,0 +1,78 @@
+.showcase .info-card {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  margin: auto;
+  text-align: center;
+  width: 30%;
+}
+
+.showcase .info-card img {
+  width: 305px;
+  max-width: 100%;
+}
+
+.showcase .info-card .info-text {
+  padding: 1rem 0rem;
+}
+
+.showcase .info-card h2 {
+  font-size: 4rem;
+}
+
+.showcase .info-card h3 {
+  font-size: 2.5rem;
+}
+
+.showcase .info-card .button-container {
+  padding: 1rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.showcase .info-card .social {
+  font-size: 2rem;
+  width: 47.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  padding: .5rem .5rem;
+  border-radius: 10px;
+  background-color: #707070;
+  border: none;
+  color: #dedede;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.showcase .info-card .social svg {
+  fill: #dedede;
+}
+
+@media screen and (max-width: 1200px) {
+  .showcase .button-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .showcase .button-container .social {
+    width: 100%;
+    margin: 1rem 0rem;
+  }
+}
+/*# sourceMappingURL=home.css.map */
