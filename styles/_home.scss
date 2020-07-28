@@ -4,33 +4,38 @@
 
 .nav-container{
     background: #B9B8B8;
+
+    svg{
+        height: 50%;
+        width: auto;
+        display: none;
+    }
 }
 
 nav{
-    width: 80%;
     margin: auto;
-    min-height: 10vh;
-    padding: 3rem 0rem;
+    height: 10vh;
+    padding: 3rem 3rem;
     display: flex;
     justify-content:space-between;
     align-items: center;
 
     ul{
         display:flex;
-        justify-content: space-between;
-        flex: 1;
+        justify-content: space-around;
         list-style: none;
+        width: 30%;
     }
     #name{
-        flex:3;
         font-size: 4rem;
         font-family: "Lobster", cursive;
+
     }
 }
 
 .showcase{
     display: grid;
-    min-height: 85vh;
+    height: 85vh;
     grid-template-columns: 10% 1fr 10%;
 
     .info-card{
@@ -38,11 +43,50 @@ nav{
         margin: auto;
         text-align:center;
 
+        width:30%;
+
+        img{
+            width:305px;
+            max-width: 100%;
+        }
+        
+        .info-text{
+            padding: 1rem 0rem;
+        }
+
         h2{
             font-size:4rem;
         }
         h3{
             font-size:2.5rem;
+        }
+
+
+        .button-container{
+            padding:1rem 0rem;
+            display:flex;
+            justify-content:space-between;
+            
+        }
+
+        .social{
+            font-size: 2rem;
+            width: 47.5%;
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            text-align:center;
+            padding: .5rem .5rem;
+            border-radius: 10px;
+            background-color: #707070;
+            border: none;
+            color:#dedede;
+            text-decoration: none;
+            cursor: pointer;
+
+            svg{
+                fill:#dedede;
+            }
         }
 
     }
@@ -80,4 +124,45 @@ nav{
     
 }
 
+@media screen and (max-width: 1200px){
+    html{
+        font-size: 45%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    
 
+    .showcase{
+        .button-container{
+            flex-direction: column;
+            justify-content: space-between;
+            .social{
+                width: 100%;
+                margin: 1rem 0rem;
+            }
+        }
+        
+    }
+    .nav-container{
+        ul{
+            flex-direction: column;
+            background-color: #f1f1f1;
+            height:85vh;
+            width:100%;
+            position: absolute;
+            top: 10vh;
+            left:-100%;
+            align-items: center;
+            transition: all .5s ease-out;
+
+        }
+        .nav.open{
+            transform: translateX(100%);
+        }
+
+        svg{
+            display: inline-block;
+        }
+    }
+}
