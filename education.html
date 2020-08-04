@@ -53,16 +53,46 @@
         <div class="showcase">
           <div class="content">
             <div class="sidebar">
-              <div class="top-sidebar">
-                <img src="./images/methuen-circle.png" />
-                <h2>Methuen High School</h2>
-              </div>
-              <div class="bottom-sidebar">
+              <div id="collegeSidebar" class="top-sidebar sidebar-selected">
                 <img src="./images/wpi-circle.png" />
                 <h2>Worcester Polytechnic Institute</h2>
               </div>
+              <div id="hsSidebar" class="bottom-sidebar">
+                <img src="./images/methuen-circle.png" />
+                <h2>Methuen High School</h2>
+              </div>
             </div>
-            <div class="body">
+            <div id="collegeBody" class="body">
+              <div class="body-header">
+                <h2>College Education</h2>
+              </div>
+              <div class="body-content">
+                <div class="body-left">
+                  <div class="statistics">
+                    <h3>Statistics</h3>
+                    <ul>
+                      <li>GPA: 3.75/4.0</li>
+                    </ul>
+                  </div>
+                  <div class="body-left">
+                    <h3>Clubs and Organizations</h3>
+                    <ul>
+                      <li>Student Alumni Society</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="scores">
+                  <h3>Major Courses</h3>
+                    <ul>
+                      <li>Intro. to Program Design (Racket)</li>
+                      <li>Object Oriented Design Principles (Java)</li>
+                      <li>Systems Programming Concepts (C/C++)</li>
+                      <li>Machine Org. and Assembly (C/ASM)</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div id="hsBody" class="body hide">
               <div class="body-header">
                 <h2>High School Education (2015-2019)</h2>
               </div>
@@ -118,6 +148,7 @@
         </footer>
       </section>
     </main>
-    <script src='./scripts/app.js'></script>
+    <script src="./scripts/app.js"></script>
+    <script src="./scripts/sidebar.js"></script>
   </body>
 </html>
