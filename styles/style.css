@@ -169,4 +169,70 @@ nav #name {
     display: inline-block;
   }
 }
+
+.projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 85vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects-container h1 {
+  font-size: 72px;
+  margin: 3rem;
+}
+
+.project-container {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  min-width: 45%;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+}
+
+.project-container div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+}
+
+.project-text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.project-text h2 {
+  font-size: 36px;
+}
+
+.project-text span {
+  font-size: 16px;
+}
+
+.project-links a {
+  background-color: #3f3e3e;
+  border-radius: 10px;
+  color: #f1f1f1;
+  padding: 15px;
+  margin: 5px;
+}
 /*# sourceMappingURL=style.css.map */

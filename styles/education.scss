@@ -147,13 +147,13 @@
         }
     }
     .body{
-        overflow-y: scroll;
+      overflow-y:scroll;
     }
     .body-header{
         display:none;
     }
     .body-content{
         flex-direction: column;
-        
+        flex-basis: 0;
     }
 }

@@ -218,6 +218,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
   }
 }
 /*# sourceMappingURL=education.css.map */
