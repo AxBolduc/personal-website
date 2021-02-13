@@ -1,0 +1,49 @@
+.about-panel{
+    background-color: $mainBlue;
+
+    .about-content{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2em 1em;
+        color: $white;
+
+        .about-title{
+            font-weight: bolder;
+        }
+
+        .about-image{
+            display:none;
+        }
+
+        .about-image-circle{
+            margin: 2em 0;
+        }
+        .about-text{
+            p{
+                margin-bottom: 1.5em;
+                font-size: 1em;
+                line-height: 128%;
+                font-weight: lighter;
+            }
+        }
+
+        .about-download{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width:100%;
+            .btn-content{
+                margin: .5em 0;
+                *{
+                    margin: 0 .25em;
+                }
+            }
+        }
+
+
+
+    }
+
+}
