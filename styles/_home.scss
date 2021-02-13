@@ -1,1 +1,70 @@
+.hero-panel {
+    background-image: url(../images/webb.png);
+   
+    .header{
 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin: 0 1em;
+
+        .title{
+            font-family:"Lobster";
+            color:$mainBlue;
+        }
+        nav{
+            ul{
+                list-style: none;
+            }
+        }
+    }
+
+    .hero{
+
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width:100%;
+
+
+        .hero-content{
+            margin:2.5em 1em;
+            h1.hero-text{
+                font-size: 2em;
+            }
+            h3.hero-subtext{
+                color:$gray;
+                font-weight:1;
+                margin: .25em 0 1em 0;
+            }
+
+            .btn{
+                display: inline-table;
+                .btn-content{
+                    svg{
+                        width:1.4375em;
+                    }
+                }
+
+
+            }
+            
+            display: flex;
+            flex-direction: column;
+
+
+        }
+        .hero-illustration{
+            margin: 2.5em 1em;
+            width:75%;
+        }
+
+
+    }
+    
+}
+.work-panel {
+    background-image: url(../images/webb.png);
+}

@@ -19,4 +19,114 @@ a {
   text-decoration: none;
   font-weight: lighter;
 }
+
+.container {
+  width: 100%;
+}
+
+.panel {
+  width: 100%;
+}
+
+.btn {
+  background-color: #0E6AF4;
+  color: white;
+  border-radius: 49px;
+  display: inline-block;
+}
+
+.btn .btn-content {
+  padding: 0 .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.4375em;
+  font-weight: bold;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-panel {
+  background-image: url(../images/webb.png);
+}
+
+.hero-panel .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 1em;
+}
+
+.hero-panel .header .title {
+  font-family: "Lobster";
+  color: #0E6AF4;
+}
+
+.hero-panel .header nav ul {
+  list-style: none;
+}
+
+.hero-panel .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.hero-panel .hero .hero-content {
+  margin: 2.5em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-panel .hero .hero-content h1.hero-text {
+  font-size: 2em;
+}
+
+.hero-panel .hero .hero-content h3.hero-subtext {
+  color: #787878;
+  font-weight: 1;
+  margin: .25em 0 1em 0;
+}
+
+.hero-panel .hero .hero-content .btn {
+  display: inline-table;
+}
+
+.hero-panel .hero .hero-content .btn .btn-content svg {
+  width: 1.4375em;
+}
+
+.hero-panel .hero .hero-illustration {
+  margin: 2.5em 1em;
+  width: 75%;
+}
+
+.work-panel {
+  background-image: url(../images/webb.png);
+}
 /*# sourceMappingURL=style.css.map */
