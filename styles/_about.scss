@@ -1,7 +1,7 @@
 .about-panel {
   background-color: $mainBlue;
 
-  @include breakpoint-up("large") {
+  @include breakpoint-up("xlarge") {
     height: 100vh;
   }
 
@@ -14,7 +14,7 @@
     color: $white;
     height: 100%;
 
-    @include breakpoint-up("large") {
+    @include breakpoint-up("xlarge") {
       padding: 0em 0 0 $bigGutter;
       display: grid;
 
@@ -27,7 +27,7 @@
 
     .about-title {
       font-weight: bold;
-      @include breakpoint-up("large"){
+      @include breakpoint-up("xlarge"){
           font-size: 5em;
       }
     }
@@ -35,7 +35,7 @@
     .about-image {
       display: none;
 
-      @include breakpoint-up("large") {
+      @include breakpoint-up("xlarge") {
         display: block;
         grid-column: 3;
         grid-row-start: 1;
@@ -50,7 +50,7 @@
       margin: 2em 0;
       display: block;
 
-      @include breakpoint-up("large") {
+      @include breakpoint-up("xlarge") {
         display: none;
       }
     }
@@ -61,12 +61,12 @@
         line-height: 128%;
         font-weight: regular;
 
-        @include breakpoint-up("large"){
+        @include breakpoint-up("xlarge"){
             font-size: 1.5em;
         }
       }
 
-      @include breakpoint-up("large"){
+      @include breakpoint-up("xlarge"){
             grid-column: 1;
       }
     }

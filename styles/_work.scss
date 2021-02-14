@@ -1,8 +1,8 @@
 .work-panel {
   background-image: url(../images/webb.png);
 
-  @include breakpoint-up("large"){
-    height:100vh;
+  @include breakpoint-up("xlarge") {
+    height: 100vh;
   }
 }
 .work-content {
@@ -12,8 +12,17 @@
   justify-content: space-around;
   align-items: center;
 
+  @include breakpoint-up("xlarge") {
+    padding: 2em $bigGutter;
+    align-items: flex-start;
+  }
+
   .work-title {
     color: $mainBlue;
+
+    @include breakpoint-up("xlarge") {
+      font-size: 4.5em;
+    }
   }
 
   .project-container {
@@ -29,6 +38,10 @@
       align-items: center;
       padding: 0.5em;
 
+      @include breakpoint-up("xlarge") {
+        flex-direction: row;
+      }
+
       * {
         margin: 0.25em 0;
       }
@@ -36,6 +49,12 @@
       .project-title {
         font-size: 1.5em;
         font-weight: 500;
+
+        @include breakpoint-up("xlarge"){
+          padding: 1em;
+          font-weight: 600;
+        }
+
       }
 
       .project-buttons {
@@ -43,8 +62,19 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+
+        @include breakpoint-up("xlarge") {
+          flex-direction: row;
+          width: 30%;
+          padding: 0 1em;
+        }
+
         .btn {
           width: 100%;
+
+          @include breakpoint-up("xlarge") {
+            width: 50%;
+          }
         }
         .btn-content {
           font-weight: 600;
@@ -52,6 +82,11 @@
           padding: 0.5em 2em;
           display: block;
           text-align: center;
+
+          @include breakpoint-up("xlarge") {
+            font-size: 2em;
+            padding: 0 1em;
+          }
         }
       }
     }

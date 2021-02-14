@@ -12,7 +12,7 @@
       font-family: "Lobster";
       color: $mainBlue;
 
-      @include breakpoint-up("large") {
+      @include breakpoint-up("xlarge") {
         font-size: 4em;
       }
     }
@@ -22,7 +22,7 @@
       }
     }
 
-    @include breakpoint-up("large") {
+    @include breakpoint-up("xlarge") {
       padding: 1em $bigGutter;
     }
   }
@@ -35,7 +35,7 @@
     width: 100%;
     padding: 2em $gutter;
 
-    @include breakpoint-up("large") {
+    @include breakpoint-up("xlarge") {
       flex-direction: row;
       justify-content: space-between;
       padding: 0 $bigGutter;
@@ -47,7 +47,7 @@
       h1.hero-text {
         font-size: 2em;
         line-height: 115%;
-        @include breakpoint-up("large") {
+        @include breakpoint-up("xlarge") {
           font-size: 4em;
           overflow: hidden;
         }
@@ -57,7 +57,7 @@
         font-weight: 400;
         margin: 0.25em 0 1em 0;
 
-        @include breakpoint-up("large") {
+        @include breakpoint-up("xlarge") {
           font-size: 3em;
           line-height: 115%;
           overflow-y: hidden;
@@ -71,7 +71,7 @@
             width: 1.4375em;
           }
 
-          @include breakpoint-up("large"){
+          @include breakpoint-up("xlarge"){
               font-size: 2.5em;
           }
         }
@@ -80,7 +80,7 @@
       display: flex;
       flex-direction: column;
 
-      @include breakpoint-up("large") {
+      @include breakpoint-up("xlarge") {
         width: 50%;
       }
     }
@@ -88,7 +88,7 @@
       margin: 2.5em 1em;
       width: 75%;
 
-      @include breakpoint-up("large") {
+      @include breakpoint-up("xlarge") {
         width: 50%;
       }
     }
