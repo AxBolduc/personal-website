@@ -1,0 +1,41 @@
+.footer-panel {
+  background-color: $mainBlue;
+
+  .footer-content {
+    padding: 1em 1em;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      .link {
+        color: $white;
+        font-size: 1.5em;
+        font-weight: 400;
+      }
+    }
+    .footer-socials {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+
+      .social-link {
+          overflow: hidden;
+          *{
+              width: 3em;
+              height: 3em;
+              fill: white
+          }
+        
+      }
+    }
+  }
+}

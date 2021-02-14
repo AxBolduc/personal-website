@@ -9,6 +9,7 @@ html {
   padding: 0;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  overflow-x: hidden;
 }
 
 body {
@@ -277,5 +278,71 @@ a {
   padding: 0.5em 2em;
   display: block;
   text-align: center;
+}
+
+.footer-panel {
+  background-color: #0E6AF4;
+}
+
+.footer-panel .footer-content {
+  padding: 1em 1em;
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.footer-panel .footer-content .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+
+.footer-panel .footer-content .footer-links .link {
+  color: #FFFFFF;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.footer-panel .footer-content .footer-socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.footer-panel .footer-content .footer-socials .social-link {
+  overflow: hidden;
+}
+
+.footer-panel .footer-content .footer-socials .social-link * {
+  width: 3em;
+  height: 3em;
+  fill: white;
 }
 /*# sourceMappingURL=style.css.map */
