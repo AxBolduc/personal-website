@@ -17,8 +17,25 @@
       }
     }
     nav {
+      display: none;
+      @include breakpoint-up("xlarge"){
+        display: block;
+        width: 25%;
+
+      }
       ul {
+        display: flex;
+        justify-content: space-between;
         list-style: none;
+        font-size: 1.5em;
+        font-weight: 600;
+        align-items: center;
+
+        .btn a{
+          color: $mainBlue;
+        }
+        
+
       }
     }
 
