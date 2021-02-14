@@ -196,4 +196,86 @@ a {
 .about-panel .about-content .about-download .btn-content * {
   margin: 0 .25em;
 }
+
+.work-content {
+  padding: 2em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work-content .work-title {
+  color: #0E6AF4;
+}
+
+.work-content .project-container {
+  margin: 1.5em 0;
+  width: 100%;
+}
+
+.work-content .project-container .project {
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5em;
+}
+
+.work-content .project-container .project * {
+  margin: 0.25em 0;
+}
+
+.work-content .project-container .project .project-title {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.work-content .project-container .project .project-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work-content .project-container .project .project-buttons .btn {
+  width: 100%;
+}
+
+.work-content .project-container .project .project-buttons .btn-content {
+  font-weight: 600;
+  font-size: 1em;
+  padding: 0.5em 2em;
+  display: block;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
