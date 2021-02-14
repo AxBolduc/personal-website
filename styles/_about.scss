@@ -1,49 +1,88 @@
-.about-panel{
-    background-color: $mainBlue;
+.about-panel {
+  background-color: $mainBlue;
 
-    .about-content{
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        padding: 2em 1em;
-        color: $white;
+  @include breakpoint-up("large") {
+    height: 100vh;
+  }
 
-        .about-title{
-            font-weight: bolder;
-        }
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em 1em;
+    color: $white;
+    height: 100%;
 
-        .about-image{
-            display:none;
-        }
+    @include breakpoint-up("large") {
+      padding: 0em 0 0 $bigGutter;
+      display: grid;
 
-        .about-image-circle{
-            margin: 2em 0;
-        }
-        .about-text{
-            p{
-                margin-bottom: 1.5em;
-                font-size: 1em;
-                line-height: 128%;
-                font-weight: lighter;
-            }
-        }
+      grid-template-columns: 45% 55%;
+      grid-template-rows: 15% 65% 20%;
 
-        .about-download{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width:100%;
-            .btn-content{
-                margin: .5em 0;
-                *{
-                    margin: 0 .25em;
-                }
-            }
-        }
-
-
-
+      align-items: center;
+      justify-content: center;
     }
 
+    .about-title {
+      font-weight: bold;
+      @include breakpoint-up("large"){
+          font-size: 5em;
+      }
+    }
+
+    .about-image {
+      display: none;
+
+      @include breakpoint-up("large") {
+        display: block;
+        grid-column: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        max-height: 100vh;
+        align-self: normal;
+        justify-self: right;
+      }
+    }
+
+    .about-image-circle {
+      margin: 2em 0;
+      display: block;
+
+      @include breakpoint-up("large") {
+        display: none;
+      }
+    }
+    .about-text {
+      p {
+        margin-bottom: 1.5em;
+        font-size: 1em;
+        line-height: 128%;
+        font-weight: regular;
+
+        @include breakpoint-up("large"){
+            font-size: 1.5em;
+        }
+      }
+
+      @include breakpoint-up("large"){
+            grid-column: 1;
+      }
+    }
+
+    .about-download {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      .btn-content {
+        margin: 0.5em 0;
+        * {
+          margin: 0 0.25em;
+        }
+      }
+
+    }
+  }
 }

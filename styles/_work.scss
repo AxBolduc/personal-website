@@ -1,3 +1,10 @@
+.work-panel {
+  background-image: url(../images/webb.png);
+
+  @include breakpoint-up("large"){
+    height:100vh;
+  }
+}
 .work-content {
   padding: 2em 1em;
   display: flex;

@@ -1,71 +1,97 @@
 .hero-panel {
-    background-image: url(../images/webb.png);
-   
-    .header{
+  background-image: url(../images/webb.png);
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        margin: 0 1em;
+    padding: 1em $gutter;
 
-        .title{
-            font-family:"Lobster";
-            color:$mainBlue;
-        }
-        nav{
-            ul{
-                list-style: none;
-            }
-        }
+    .title {
+      font-family: "Lobster";
+      color: $mainBlue;
+
+      @include breakpoint-up("large") {
+        font-size: 4em;
+      }
+    }
+    nav {
+      ul {
+        list-style: none;
+      }
     }
 
-    .hero{
-
-        display:flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        width:100%;
-        padding:2em 0;
-
-
-        .hero-content{
-            margin:2.5em 1em;
-            h1.hero-text{
-                font-size: 2em;
-            }
-            h3.hero-subtext{
-                color:$gray;
-                font-weight:1;
-                margin: .25em 0 1em 0;
-            }
-
-            .btn{
-                display: inline-table;
-                .btn-content{
-                    svg{
-                        width:1.4375em;
-                    }
-                }
-
-
-            }
-            
-            display: flex;
-            flex-direction: column;
-
-
-        }
-        .hero-illustration{
-            margin: 2.5em 1em;
-            width:75%;
-        }
-
-
+    @include breakpoint-up("large") {
+      padding: 1em $bigGutter;
     }
-    
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 2em $gutter;
+
+    @include breakpoint-up("large") {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 $bigGutter;
+      height: 100vh;
+    }
+
+    .hero-content {
+      margin: 2.5em 0;
+      h1.hero-text {
+        font-size: 2em;
+        line-height: 115%;
+        @include breakpoint-up("large") {
+          font-size: 4em;
+          overflow: hidden;
+        }
+      }
+      h3.hero-subtext {
+        color: $gray;
+        font-weight: 400;
+        margin: 0.25em 0 1em 0;
+
+        @include breakpoint-up("large") {
+          font-size: 3em;
+          line-height: 115%;
+          overflow-y: hidden;
+        }
+      }
+
+      .btn {
+        display: inline-table;
+        .btn-content {
+          svg {
+            width: 1.4375em;
+          }
+
+          @include breakpoint-up("large"){
+              font-size: 2.5em;
+          }
+        }
+      }
+
+      display: flex;
+      flex-direction: column;
+
+      @include breakpoint-up("large") {
+        width: 50%;
+      }
+    }
+    .hero-illustration {
+      margin: 2.5em 1em;
+      width: 75%;
+
+      @include breakpoint-up("large") {
+        width: 50%;
+      }
+    }
+  }
 }
-.work-panel {
-    background-image: url(../images/webb.png);
-}
+
