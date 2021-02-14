@@ -195,7 +195,10 @@ a {
 }
 
 .hero-panel .hero .hero-content .btn {
-  display: inline-table;
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .hero-panel .hero .hero-content .btn .btn-content svg {

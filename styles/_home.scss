@@ -82,7 +82,9 @@
       }
 
       .btn {
-        display: inline-table;
+        display: block;
+        width:fit-content;
+
         .btn-content {
           svg {
             width: 1.4375em;
