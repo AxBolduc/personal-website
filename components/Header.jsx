@@ -16,8 +16,8 @@ function Header() {
 
 			{/* right */}
 			<div>
-				<div className="sm:text-xl md:flex shadow-lg rounded-full p-4 cursor-pointer md:text-3xl bg-blue-500  transition ease-in-out duration-100 hover:scale-110 ">
-					<h2 className="text-white font-bold" onClick={mail}>
+				<div className="sm:text-xl md:flex shadow-lg rounded-full p-4 cursor-pointer md:text-3xl bg-white  transition ease-in-out duration-100 hover:scale-110 ">
+					<h2 className="text-blue-600 font-bold" onClick={mail}>
 						Contact
 					</h2>
 				</div>
