@@ -1,17 +1,25 @@
+import Image from "next/image";
+import logo from "../images/Logo.png";
+
+function mail() {
+	window.location = "mailto:aebolduc@wpi.edu";
+}
+
 function Header() {
 	return (
-		<header className="flex justify-between gap-5 h-24 px-8 items-center shadow-lg">
+		<header className="flex justify-between gap-5 h-24 items-center">
 			{/* left */}
 			<div>
-				<h1 className="text-lg md:text-3xl">Alex Bolduc</h1>
+				{/* <h1 className="text-lg md:text-3xl">Alex Bolduc</h1> */}
+				<Image src={logo} width="175" height="50" />
 			</div>
 
 			{/* right */}
-			<div className="hidden md:flex justify-around space-x-4 items-center">
-				<h2 className="md:text-2xl">About</h2>
-				<h2 className="md:text-2xl">Work</h2>
-				<div className="shadow-md rounded-full p-2 cursor-pointer md:text-2xl">
-					<h2 className="text-blue-400 font-bold">Contact</h2>
+			<div>
+				<div className="sm:text-xl md:flex shadow-lg rounded-full p-4 cursor-pointer md:text-3xl bg-blue-500  transition ease-in-out duration-100 hover:scale-110 ">
+					<h2 className="text-white font-bold" onClick={mail}>
+						Contact
+					</h2>
 				</div>
 			</div>
 		</header>
