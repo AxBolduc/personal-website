@@ -3,7 +3,6 @@
 
   .footer-content {
     padding: 1em 1em;
-    height: 20vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,13 +13,12 @@
     }
 
     .footer-links {
-      display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
       .link {
         color: $white;
-        font-size: 1.5em;
+        font-size: 0.75em;
         font-weight: 400;
         @include breakpoint-up("xlarge"){
           font-weight: 600;
@@ -32,25 +30,18 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      height: 100%;
 
       @include breakpoint-up("xlarge"){
         flex-direction: row;
-        width: 10%;
       }
 
       .social-link {
           overflow: hidden;
+          margin: 0em 1em;
           *{
               width: 3em;
               height: 3em;
               fill: white;
-
-              @include breakpoint-up("xlarge"){
-                width: 5em;
-                height: 5em;
-              }
-
           }
         
       }

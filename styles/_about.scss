@@ -1,21 +1,17 @@
 .about-panel {
   background-color: $mainBlue;
 
-  @include breakpoint-up("xlarge") {
-    height: 100vh;
-  }
 
   .about-content {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 2em 1em;
+    margin: 2em 4em;
     color: $white;
     height: 100%;
 
     @include breakpoint-up("xlarge") {
-      padding: 0em 0 0 $bigGutter;
       display: grid;
 
       grid-template-columns: 45% 55%;
@@ -35,11 +31,13 @@
     .about-image {
       display: none;
 
+      border-radius: 10px;
+
       @include breakpoint-up("xlarge") {
         display: block;
         grid-column: 3;
         grid-row-start: 1;
-        grid-row-end: 2;
+        grid-row-end: 4;
         max-height: 100vh;
         align-self: normal;
         justify-self: right;
@@ -62,7 +60,7 @@
         font-weight: regular;
 
         @include breakpoint-up("xlarge"){
-            font-size: 1.5em;
+            font-size: 1.25em;
         }
       }
 
@@ -83,6 +81,12 @@
         }
       }
 
+    }
+
+    .resumeBtn{
+      @include breakpoint-up("xlarge"){
+        grid-column: 1;
+      }
     }
   }
 }

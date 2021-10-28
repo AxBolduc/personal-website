@@ -20,7 +20,7 @@
       display: none;
       @include breakpoint-up("xlarge"){
         display: block;
-        width: 25%;
+        width: 35%;
 
       }
       ul {
@@ -55,8 +55,7 @@
     @include breakpoint-up("xlarge") {
       flex-direction: row;
       justify-content: space-between;
-      padding: 0 $bigGutter;
-      height: 100vh;
+      padding: 6em $bigGutter;
     }
 
     .hero-content {
@@ -64,9 +63,9 @@
       h1.hero-text {
         font-size: 2em;
         line-height: 115%;
+          overflow: hidden;
         @include breakpoint-up("xlarge") {
           font-size: 4em;
-          overflow: hidden;
         }
       }
       h3.hero-subtext {

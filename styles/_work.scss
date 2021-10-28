@@ -1,9 +1,5 @@
 .work-panel {
   background-image: url(../images/webb.png);
-
-  @include breakpoint-up("xlarge") {
-    height: 100vh;
-  }
 }
 .work-content {
   padding: 2em 1em;
@@ -74,7 +70,7 @@
           width: 100%;
 
           @include breakpoint-up("xlarge") {
-            width: 50%;
+            width: 45%;
           }
         }
         .btn-content {
@@ -85,7 +81,7 @@
           text-align: center;
 
           @include breakpoint-up("xlarge") {
-            font-size: 2em;
+            font-size: 1.6em;
             padding: 0 1em;
           }
         }
