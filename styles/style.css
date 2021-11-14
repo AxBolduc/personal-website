@@ -301,6 +301,9 @@ a {
 .about-panel .about-content .about-image-circle {
   margin: 2em 0;
   display: block;
+  max-height: 10rem;
+  -webkit-clip-path: circle();
+          clip-path: circle();
 }
 
 @media (min-width: 90em) {
@@ -420,6 +423,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: 0.5em;
+  margin: 0.5em;
   border: 5px rgba(14, 106, 244, 0.5) solid;
 }
 
@@ -448,6 +452,12 @@ a {
   }
 }
 
+.work-content .project-container .project .flex-span {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
 .work-content .project-container .project .project-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -456,8 +466,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -524,20 +535,19 @@ a {
 }
 
 .footer-panel .footer-content .footer-links {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
 }
 
 .footer-panel .footer-content .footer-links .link {
   color: #FFFFFF;
   font-size: 0.75em;
   font-weight: 400;
+  margin: 0 1rem;
 }
 
 @media (min-width: 90em) {

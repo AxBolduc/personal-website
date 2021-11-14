@@ -33,6 +33,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 0.5em;
+      margin:0.5em;
       border: 5px rgba(14, 106, 244, 0.5) solid;
 
       @include breakpoint-up("xlarge") {
@@ -54,10 +55,14 @@
 
       }
 
+      .flex-span{
+        flex:2;
+      }
+
       .project-buttons {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
 
         @include breakpoint-up("xlarge") {

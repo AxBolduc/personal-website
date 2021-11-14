@@ -47,6 +47,8 @@
     .about-image-circle {
       margin: 2em 0;
       display: block;
+      max-height: 10rem;
+      clip-path: circle();
 
       @include breakpoint-up("xlarge") {
         display: none;
