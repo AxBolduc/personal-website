@@ -1,7 +1,7 @@
 ---
-title: Hello World 👋
-publishDate: 30 Nov 2021
-description: Every blog starts with a single post. This is yours. Make it great.
+title: Test Blog Post 👋
+publishDate: 06 Jul 2023
+description: This is my first markdown blog post
 ---
 
 ![Illustration of woman using a meditation app](/assets/blog/casual-life-3d-meditation-crystal.webp)
