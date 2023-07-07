@@ -28,9 +28,19 @@ const {href, project} = Astro.props
 </div>
 
 <style>
-  h2 {
+  h2, .project-footer{
+    font-family: var(--font-family-sans);
+    font-weight: 700;
     margin: auto
   }
+
+  .project-date {
+    color: var(--text-secondary);
+    text-align: left;
+    text-transform: uppercase;
+    margin-right: 16px;
+  }
+  
 
   .project-box {
     background-color: var(--background-secondary);

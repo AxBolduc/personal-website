@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Bio from '../../components/Bio.astro';
 
 export async function getStaticPaths() {
   const projects = await Astro.glob('../../data/projects/*.md');
@@ -25,6 +26,7 @@ const permalink = `${Astro.site?.href}projects/${Astro.params.slug}`;
       <Content />
     </article>
     <hr />
+    <Bio />
   </div>
 </BaseLayout>
 
