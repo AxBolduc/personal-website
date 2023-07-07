@@ -12,6 +12,16 @@ const { title, description, permalink } = Astro.props;
 const socialUrl = Astro.site?.href + 'assets/social.png'
 ---
 
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MJNTV0XWKG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MJNTV0XWKG');
+</script>
+
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
