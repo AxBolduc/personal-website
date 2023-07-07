@@ -1,0 +1,40 @@
+---
+import { MarkdownInstance } from '../../node_modules/astro/dist/@types/astro';
+
+export interface ProjectMarkdown {
+  title: string,
+  description: string,
+  publishDate: string
+}
+
+export interface Props {
+  href: string,
+  project: MarkdownInstance<ProjectMarkdown>
+}
+
+const {href, project} = Astro.props
+---
+
+<div class="project-box">
+  <h2>
+    <a href={href}>
+      {project.frontmatter.title}
+    </a>
+  </h2>
+  <p class="project-description">{project.frontmatter.description}</p>
+  <div class="project-footer"> 
+    <span class="project-date">— {project.frontmatter.publishDate}</span>
+  </div>
+</div>
+
+<style>
+  h2 {
+    margin: auto
+  }
+
+  .project-box {
+    background-color: var(--background-secondary);
+    border-radius: 15px;
+    padding: 1rem;
+  }
+</style>
