@@ -4,7 +4,9 @@ description: A web app built on the T3 stack to track the movies you've watched
 publishDate: 01 Jan 2022
 ---
 
+![Screenshot of the landing page for the movie tracker web application](/assets/moviesApp.jpg)
 A full stack web app built on the T3 stack to track the movies you've watched
+
 
 ## Technologies: 
 - NextJS - React framework
