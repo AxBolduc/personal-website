@@ -1,109 +1,317 @@
 <!DOCTYPE html>
 <html lang="en" class="astro-7D6VW2Q7">
-<head>
-  <!-- Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-MJNTV0XWKG"></script>
+  <head>
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-MJNTV0XWKG"
+    ></script>
 
+    <!-- Global Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 
-<!-- Global Metadata --><meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <!-- Primary Meta Tags -->
+    <title>Alex Bolduc - Software Engineer</title>
+    <meta name="title" content="Alex Bolduc - Software Engineer" />
+    <meta name="description" content="Alex Bolduc" />
 
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://astro-blog-template.netlify.app/"
+    />
+    <meta property="og:title" content="Alex Bolduc - Software Engineer" />
+    <meta property="og:description" content="Alex Bolduc" />
 
-<!-- Primary Meta Tags -->
-<title>My Astro Blog</title>
-<meta name="title" content="My Astro Blog">
-<meta name="description" content="The perfect starter for your perfect blog.">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://astro-blog-template.netlify.app/"
+    />
+    <meta property="twitter:title" content="Alex Bolduc - Software Engineer" />
+    <meta property="twitter:description" content="Alex Bolduc" />
 
-<!-- Open Graph / Facebook -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://astro-blog-template.netlify.app/">
-<meta property="og:title" content="My Astro Blog">
-<meta property="og:description" content="The perfect starter for your perfect blog.">
+    <!-- This is intentionally inlined to avoid FOUC -->
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="https://astro-blog-template.netlify.app/">
-<meta property="twitter:title" content="My Astro Blog">
-<meta property="twitter:description" content="The perfect starter for your perfect blog.">
+    <link rel="stylesheet" href="/assets/index.775a6c45.css" />
+    <link rel="stylesheet" href="/assets/about.4c826afd.css" />
+    <script type="module">
+      const e = document.documentElement,
+        a = localStorage.getItem("theme");
+      a === "dark" ||
+      (!a && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ? e.classList.add("theme-dark")
+        : e.classList.remove("theme-dark");
+      window.dataLayer = window.dataLayer || [];
+      function t() {
+        dataLayer.push(arguments);
+      }
+      t("js", new Date());
+      t("config", "G-MJNTV0XWKG");
+    </script>
+  </head>
+  <body class="astro-7D6VW2Q7">
+    <div class="layout astro-7D6VW2Q7">
+      <header class="astro-HNYIYTU6">
+        <a href="/" class="astro-CEKIZCU5">
+          <img
+            alt="Blog Logo"
+            src="/assets/logo.svg"
+            width="75"
+            height="50"
+            class="astro-CEKIZCU5"
+          />
+        </a>
 
-<!-- This is intentionally inlined to avoid FOUC -->
+        <nav class="astro-FW5BKOZC">
+          <a class="selected astro-FW5BKOZC" href="/">home</a>
+          <a class="astro-FW5BKOZC" href="/about">about</a>
+          <a class="astro-FW5BKOZC" href="/projects">projects</a>
+          <div class="theme-toggle-container astro-FW5BKOZC">
+            <style>
+              astro-island,
+              astro-slot {
+                display: contents;
+              }
+            </style>
+            <script>
+              ((self.Astro = self.Astro || {}).load = (a) => {
+                (async () => await (await a())())();
+              }),
+                window.dispatchEvent(new Event("astro:load"));
+              var l;
+              {
+                const c = {
+                    0: (t) => t,
+                    1: (t) => JSON.parse(t, o),
+                    2: (t) => new RegExp(t),
+                    3: (t) => new Date(t),
+                    4: (t) => new Map(JSON.parse(t, o)),
+                    5: (t) => new Set(JSON.parse(t, o)),
+                    6: (t) => BigInt(t),
+                    7: (t) => new URL(t),
+                    8: (t) => new Uint8Array(JSON.parse(t)),
+                    9: (t) => new Uint16Array(JSON.parse(t)),
+                    10: (t) => new Uint32Array(JSON.parse(t)),
+                  },
+                  o = (t, s) => {
+                    if (t === "" || !Array.isArray(s)) return s;
+                    const [e, n] = s;
+                    return e in c ? c[e](n) : void 0;
+                  };
+                customElements.get("astro-island") ||
+                  customElements.define(
+                    "astro-island",
+                    ((l = class extends HTMLElement {
+                      constructor() {
+                        super(...arguments);
+                        this.hydrate = () => {
+                          if (
+                            !this.hydrator ||
+                            (this.parentElement &&
+                              this.parentElement.closest("astro-island[ssr]"))
+                          )
+                            return;
+                          const s = this.querySelectorAll("astro-slot"),
+                            e = {},
+                            n = this.querySelectorAll(
+                              "template[data-astro-template]"
+                            );
+                          for (const r of n) {
+                            const i = r.closest(this.tagName);
+                            !i ||
+                              !i.isSameNode(this) ||
+                              ((e[
+                                r.getAttribute("data-astro-template") ||
+                                  "default"
+                              ] = r.innerHTML),
+                              r.remove());
+                          }
+                          for (const r of s) {
+                            const i = r.closest(this.tagName);
+                            !i ||
+                              !i.isSameNode(this) ||
+                              (e[r.getAttribute("name") || "default"] =
+                                r.innerHTML);
+                          }
+                          const a = this.hasAttribute("props")
+                            ? JSON.parse(this.getAttribute("props"), o)
+                            : {};
+                          this.hydrator(this)(this.Component, a, e, {
+                            client: this.getAttribute("client"),
+                          }),
+                            this.removeAttribute("ssr"),
+                            window.removeEventListener(
+                              "astro:hydrate",
+                              this.hydrate
+                            ),
+                            window.dispatchEvent(
+                              new CustomEvent("astro:hydrate")
+                            );
+                        };
+                      }
+                      connectedCallback() {
+                        !this.hasAttribute("await-children") || this.firstChild
+                          ? this.childrenConnectedCallback()
+                          : new MutationObserver((s, e) => {
+                              e.disconnect(), this.childrenConnectedCallback();
+                            }).observe(this, { childList: !0 });
+                      }
+                      async childrenConnectedCallback() {
+                        window.addEventListener("astro:hydrate", this.hydrate);
+                        let s = this.getAttribute("before-hydration-url");
+                        s && (await import(s)), this.start();
+                      }
+                      start() {
+                        const s = JSON.parse(this.getAttribute("opts")),
+                          e = this.getAttribute("client");
+                        if (Astro[e] === void 0) {
+                          window.addEventListener(
+                            `astro:${e}`,
+                            () => this.start(),
+                            { once: !0 }
+                          );
+                          return;
+                        }
+                        Astro[e](
+                          async () => {
+                            const n = this.getAttribute("renderer-url"),
+                              [a, { default: r }] = await Promise.all([
+                                import(this.getAttribute("component-url")),
+                                n ? import(n) : () => () => {},
+                              ]),
+                              i =
+                                this.getAttribute("component-export") ||
+                                "default";
+                            if (!i.includes(".")) this.Component = a[i];
+                            else {
+                              this.Component = a;
+                              for (const d of i.split("."))
+                                this.Component = this.Component[d];
+                            }
+                            return (this.hydrator = r), this.hydrate;
+                          },
+                          s,
+                          this
+                        );
+                      }
+                      attributeChangedCallback() {
+                        this.hydrator && this.hydrate();
+                      }
+                    }),
+                    (l.observedAttributes = ["props"]),
+                    l)
+                  );
+              }
+            </script>
+            <astro-island
+              uid="1Kalxf"
+              component-url="/ThemeToggleButton.df2da8cb.js"
+              component-export="default"
+              renderer-url="/client.788af3ea.js"
+              props='{"class":[0,"astro-FW5BKOZC"]}'
+              ssr=""
+              client="load"
+              opts='{"name":"ThemeToggleButton","value":true}'
+              await-children=""
+              ><div class="theme-toggle">
+                <label class=""
+                  ><!-- HTML_TAG_START --><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                      clip-rule="evenodd"
+                    /></svg
+                  ><!-- HTML_TAG_END -->
+                  <input
+                    type="radio"
+                    name="theme-toggle"
+                    value="light"
+                    title="Use light theme"
+                    aria-label="Use light theme"
+                  /> </label
+                ><label class=""
+                  ><!-- HTML_TAG_START --><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                    /></svg
+                  ><!-- HTML_TAG_END -->
+                  <input
+                    type="radio"
+                    name="theme-toggle"
+                    value="dark"
+                    title="Use dark theme"
+                    aria-label="Use dark theme"
+                  />
+                </label></div
+            ></astro-island>
+          </div>
+        </nav>
+      </header>
 
+      <main class="astro-7D6VW2Q7">
+        <div class="home-container astro-FQHR2YUX">
+          <div class="home-copy astro-FQHR2YUX">
+            <h1 class="astro-FQHR2YUX">Alex Bolduc</h1>
+            <p class="astro-FQHR2YUX">
+              Backend engineer developing efficient software solutions
+            </p>
+          </div>
 
-<link rel="stylesheet" href="/assets/index.cf18c3fb.css" />
-<link rel="stylesheet" href="/assets/about.4c826afd.css" /><script type="module">const e=document.documentElement,a=localStorage.getItem("theme");a==="dark"||!a&&window.matchMedia("(prefers-color-scheme: dark)").matches?e.classList.add("theme-dark"):e.classList.remove("theme-dark");window.dataLayer=window.dataLayer||[];function t(){dataLayer.push(arguments)}t("js",new Date);t("config","G-MJNTV0XWKG");
-</script></head>
-<body class="astro-7D6VW2Q7">
-  <div class="layout astro-7D6VW2Q7">
-    
+          <div class="hero-image-container astro-FQHR2YUX">
+            <picture class="astro-FQHR2YUX">
+              <source
+                srcset="/assets/images/heroIllustration.svg"
+                media="(min-width: 600px)"
+                class="astro-FQHR2YUX"
+              />
+              <img
+                class="hero-image astro-FQHR2YUX"
+                alt="Illustration of a cartoon robot behind a laptop"
+                src="/assets/images/heroIllustration.svg"
+                width="550"
+                height="466"
+              />
+            </picture>
+          </div>
+        </div>
+      </main>
 
-<header class="astro-HNYIYTU6">
-  
-
-<a href="/" class="astro-CEKIZCU5">
-  <img alt="Blog Logo" src="/assets/logo.svg" width="75" height="50" class="astro-CEKIZCU5">
-</a>
-  
-
-<nav class="astro-FW5BKOZC">
-  <a class="selected astro-FW5BKOZC" href="/">home</a>
-  <a class=" astro-FW5BKOZC" href="/about">about</a>
-  <a class=" astro-FW5BKOZC" href="/projects">projects</a>
-  <div class="theme-toggle-container astro-FW5BKOZC">
-    <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).load=a=>{(async()=>await(await a())())()},window.dispatchEvent(new Event("astro:load"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="1Kalxf" component-url="/ThemeToggleButton.df2da8cb.js" component-export="default" renderer-url="/client.788af3ea.js" props="{&quot;class&quot;:[0,&quot;astro-FW5BKOZC&quot;]}" ssr="" client="load" opts="{&quot;name&quot;:&quot;ThemeToggleButton&quot;,&quot;value&quot;:true}" await-children=""><div class="theme-toggle"><label class=""><!-- HTML_TAG_START --><svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="currentColor"
-    >
-      <path
-        fill-rule="evenodd"
-        d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-        clip-rule="evenodd"
-      />
-    </svg><!-- HTML_TAG_END -->
-      <input type="radio" name="theme-toggle"  value="light" title="Use light theme" aria-label="Use light theme">
-    </label><label class=""><!-- HTML_TAG_START --><svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="20"
-      height="20"
-      viewBox="0 0 20 20"
-      fill="currentColor"
-    >
-      <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-    </svg><!-- HTML_TAG_END -->
-      <input type="radio" name="theme-toggle"  value="dark" title="Use dark theme" aria-label="Use dark theme">
-    </label></div></astro-island>
-  </div>
-</nav>
-</header>
-
-    <main class="astro-7D6VW2Q7">
-      <div class="home-container astro-A3FAG5JX">
-    <div class="home-copy astro-A3FAG5JX">
-      <h1 class="astro-A3FAG5JX">Alex Bolduc</h1>
-      <p class="astro-A3FAG5JX">Backend engineer developing efficient software solutions</p>
+      <footer class="astro-2KK5XU5M">
+        <span class="astro-2KK5XU5M">
+          &copy; 2024 Alex Bolduc. Powered by
+          <a
+            href="https://astro.build"
+            target="_blank"
+            rel="noopener"
+            class="astro-2KK5XU5M"
+            >Astro</a
+          >. Template by
+          <a
+            href="https://www.twitter.com/Charca"
+            target="_blank"
+            rel="noopener"
+            class="astro-2KK5XU5M"
+            >Maxi Ferreira</a
+          >.
+        </span>
+      </footer>
     </div>
-
-    <div class="hero-image-container astro-A3FAG5JX">
-      <picture class="astro-A3FAG5JX">
-        <source srcset="/assets/images/heroIllustration.svg" media="(min-width: 600px)" class="astro-A3FAG5JX">
-        <img class="hero-image astro-A3FAG5JX" alt="Illustration of a cartoon robot behind a laptop" src="/assets/images/heroIllustration.svg" width="550" height="466">
-      </picture>
-    </div>
-  </div>
-    </main>
-
-    <footer class="astro-2KK5XU5M">
-  <span class="astro-2KK5XU5M">
-    &copy; 2023 Alex Bolduc.
-    Powered by <a href="https://astro.build" target="_blank" rel="noopener" class="astro-2KK5XU5M">Astro</a>.
-    Template by <a href="https://www.twitter.com/Charca" target="_blank" rel="noopener" class="astro-2KK5XU5M">Maxi Ferreira</a>.
-  </span>
-</footer>
-
-
-  </div>
-
-</body></html>
-
+  </body>
+</html>
