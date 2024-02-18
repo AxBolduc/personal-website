@@ -1,8 +1,8 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
-const title = 'My Astro Blog';
-const description = 'The perfect starter for your perfect blog.';
+const title = "Alex Bolduc - Software Engineer";
+const description = "Alex Bolduc";
 const permalink = Astro.site?.href ?? "/";
 ---
 
@@ -15,8 +15,17 @@ const permalink = Astro.site?.href ?? "/";
 
     <div class="hero-image-container">
       <picture>
-        <source srcset="/assets/images/heroIllustration.svg" media="(min-width: 600px)">
-        <img class="hero-image" alt="Illustration of a cartoon robot behind a laptop" src="/assets/images/heroIllustration.svg" width="550" height="466">
+        <source
+          srcset="/assets/images/heroIllustration.svg"
+          media="(min-width: 600px)"
+        />
+        <img
+          class="hero-image"
+          alt="Illustration of a cartoon robot behind a laptop"
+          src="/assets/images/heroIllustration.svg"
+          width="550"
+          height="466"
+        />
       </picture>
     </div>
   </div>
