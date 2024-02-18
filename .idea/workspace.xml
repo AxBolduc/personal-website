@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="33c88fad-1da9-41d4-945d-60748a25b5e8" name="Changes" comment="chore: rename logo file" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="build" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2WnxQO4lUDcLYlh8QWwFUbvccHe" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;build&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/alex.bolduc/Documents/personal-website/dist&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dist" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33c88fad-1da9-41d4-945d-60748a25b5e8" name="Changes" comment="" />
+      <created>1697382128854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1697382128854</updated>
+      <workItem from="1697382129896" duration="2620000" />
+      <workItem from="1697386991934" duration="1977000" />
+      <workItem from="1697391060801" duration="1294000" />
+      <workItem from="1697462168627" duration="17000" />
+    </task>
+    <task id="LOCAL-00001" summary="feat: update hospital app markdown">
+      <option name="closed" value="true" />
+      <created>1697387223158</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697387223158</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: update about page.">
+      <option name="closed" value="true" />
+      <created>1697390013105</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697390013105</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: update about page.">
+      <option name="closed" value="true" />
+      <created>1697390088636</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697390088636</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chore: cleanup merge">
+      <option name="closed" value="true" />
+      <created>1697390443713</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697390443713</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore: build">
+      <option name="closed" value="true" />
+      <created>1697390867134</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1697390867134</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore: build again">
+      <option name="closed" value="true" />
+      <created>1697390921308</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1697390921308</updated>
+    </task>
+    <task id="LOCAL-00007" summary="chore: bring back image">
+      <option name="closed" value="true" />
+      <created>1697391309608</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1697391309608</updated>
+    </task>
+    <task id="LOCAL-00008" summary="chore: rebuild">
+      <option name="closed" value="true" />
+      <created>1697391513178</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1697391513178</updated>
+    </task>
+    <task id="LOCAL-00009" summary="chore: rebuild">
+      <option name="closed" value="true" />
+      <created>1697391598819</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1697391598819</updated>
+    </task>
+    <task id="LOCAL-00010" summary="chore: rename logo file">
+      <option name="closed" value="true" />
+      <created>1697391752342</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1697391752342</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: update hospital app markdown" />
+    <MESSAGE value="BACKUP" />
+    <MESSAGE value="chore: cleanup merge" />
+    <MESSAGE value="chore: build" />
+    <MESSAGE value="chore: build again" />
+    <MESSAGE value="chore: bring back image" />
+    <MESSAGE value="chore: rebuild" />
+    <MESSAGE value="chore: rename logo file" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore: rename logo file" />
+  </component>
+</project>
