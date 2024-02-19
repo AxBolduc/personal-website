@@ -1,6 +1,6 @@
 ---
 title: Daka Dining
-description: A mobile application that allows users to buy and sell meal swipres to the university dining hall.
+description: A mobile application that allows users to buy and sell meal swipes to the university dining hall.
 publishDate: 18 Feb 2024
 ---
 
