@@ -1,7 +1,8 @@
 ---
 title: Daka Dining
+language: Kotlin & C#
 description: A mobile application that allows users to buy and sell meal swipes to the university dining hall.
-publishDate: 18 Feb 2024
+publishDate: 01 Feb 2024
 ---
 
 An android application written in Kotlin that allows users to buy and sell meal swipes to the university dining hall

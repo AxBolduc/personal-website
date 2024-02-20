@@ -1,5 +1,5 @@
 ---
-import { MarkdownInstance } from '../../node_modules/astro/dist/@types/astro';
+import type { MarkdownInstance } from '../../node_modules/astro/dist/@types/astro';
 
 export interface ProjectMarkdown {
   title: string,
@@ -20,9 +20,10 @@ const {href, project} = Astro.props
     <a href={href}>
       {project.frontmatter.title}
     </a>
+      <span class="project-language"> &dash; {project.frontmatter.language}</span>
   </h2>
   <p class="project-description">{project.frontmatter.description}</p>
-  <div class="project-footer"> 
+  <div class="project-footer">
     <span class="project-date">— {project.frontmatter.publishDate}</span>
   </div>
 </div>
@@ -40,11 +41,15 @@ const {href, project} = Astro.props
     text-transform: uppercase;
     margin-right: 16px;
   }
-  
+
 
   .project-box {
     background-color: var(--background-secondary);
     border-radius: 15px;
     padding: 1rem;
+  }
+
+  .project-language {
+    color: var(--text-secondary)
   }
 </style>

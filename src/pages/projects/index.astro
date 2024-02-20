@@ -2,9 +2,9 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Project, {ProjectMarkdown} from '../../components/Project.astro';
 
-const title = 'Blog';
-const description = 'Latest articles.';
-const permalink = `${Astro.site?.href}blog`;
+const title = 'Projects';
+const description = 'Recent Projects';
+const permalink = `${Astro.site?.href}projects`;
 
 let allProjects = await Astro.glob<ProjectMarkdown>('../../data/projects/*.md');
 allProjects = allProjects.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf() - new Date(a.frontmatter.publishDate).valueOf());
