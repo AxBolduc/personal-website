@@ -1,18 +1,25 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { DATA } from '../data/resume';
 ---
 
 <BaseLayout title="Experience">
-  <section class="section">
-    <p class="eyebrow">Career</p>
-    <h1>Experience</h1>
-    <p class="lede">Use this page as a resume-style timeline of roles, impact, technologies, and achievements.</p>
-  </section>
-  <section class="grid">
-    <article class="card">
-      <h3>Role — Company</h3>
-      <p>Dates · Location/Remote</p>
-      <p>Summarize responsibilities, impact, and technologies used.</p>
-    </article>
-  </section>
+  <main class="portfolio-stack">
+    <section class="section">
+      <p class="section-label">Career</p>
+      <h1>Experience</h1>
+      <div class="timeline">
+        {DATA.work.map((job) => (
+          <article class="timeline-item">
+            <div>
+              <h3>{job.title}</h3>
+              <p class="muted">{job.company}</p>
+              <p>{job.description}</p>
+            </div>
+            <span class="dates">{job.start} — {job.end}</span>
+          </article>
+        ))}
+      </div>
+    </section>
+  </main>
 </BaseLayout>

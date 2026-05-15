@@ -1,14 +1,17 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { DATA } from '../data/resume';
 ---
 
 <BaseLayout title="About">
-  <section class="section">
-    <p class="eyebrow">About</p>
-    <h1>Software engineering with care for users, teams, and long-term maintainability.</h1>
-    <p class="lede">
-      This page is ready for your personal story: what you enjoy building, the kinds of teams
-      you thrive on, and the engineering values that guide your work.
-    </p>
-  </section>
+  <main class="portfolio-stack">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">About</p>
+        <h1>{DATA.name}</h1>
+        <p class="lede">{DATA.summary}</p>
+      </div>
+      <div class="avatar" aria-hidden="true">{DATA.initials}</div>
+    </section>
+  </main>
 </BaseLayout>

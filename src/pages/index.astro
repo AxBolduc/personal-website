@@ -1,36 +1,78 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { DATA } from '../data/resume';
 ---
 
-<BaseLayout title="Software Engineer" description="Alex Bolduc's software engineering portfolio and career site.">
-  <section class="hero">
-    <p class="eyebrow">Software Engineer</p>
-    <h1>Building thoughtful, reliable software systems.</h1>
-    <p class="lede">
-      I’m Alex Bolduc, a software engineer focused on creating maintainable applications,
-      useful developer experiences, and dependable systems that solve real problems.
-    </p>
-    <div class="actions">
-      <a class="button" href="/projects">View projects</a>
-      <a class="button secondary" href="/contact">Get in touch</a>
-    </div>
-  </section>
+<BaseLayout>
+  <main class="portfolio-stack">
+    <section class="hero" id="home">
+      <div>
+        <p class="eyebrow">{DATA.role} · {DATA.location}</p>
+        <h1>Hi, I’m {DATA.name.split(' ')[0]}.</h1>
+        <p class="lede">{DATA.description}</p>
+      </div>
+      <div class="avatar" aria-hidden="true">{DATA.initials}</div>
+    </section>
 
-  <section class="section">
-    <h2>What I do</h2>
-    <div class="grid">
-      <article class="card">
-        <h3>Product engineering</h3>
-        <p>Turning ambiguous ideas into shipped, maintainable web applications.</p>
-      </article>
-      <article class="card">
-        <h3>Systems thinking</h3>
-        <p>Designing software with clear boundaries, practical tradeoffs, and room to evolve.</p>
-      </article>
-      <article class="card">
-        <h3>Developer experience</h3>
-        <p>Improving workflows, tooling, tests, and documentation so teams move with confidence.</p>
-      </article>
-    </div>
-  </section>
+    <section class="section" id="about">
+      <h2>About</h2>
+      <p>{DATA.summary}</p>
+    </section>
+
+    <section class="section" id="work">
+      <h2>Work Experience</h2>
+      <div class="timeline">
+        {DATA.work.map((job) => (
+          <article class="timeline-item">
+            <div>
+              <h3>{job.title}</h3>
+              <p class="muted">{job.company}</p>
+              <p>{job.description}</p>
+            </div>
+            <span class="dates">{job.start} — {job.end}</span>
+          </article>
+        ))}
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Skills</h2>
+      <div class="pills">
+        {DATA.skills.map((skill) => <span class="pill">{skill}</span>)}
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <p class="section-label">Selected work</p>
+      <h2>Check out my latest projects</h2>
+      <p class="muted">A few examples of the products, tools, and systems I’ve worked on.</p>
+      <div class="project-grid">
+        {DATA.projects.map((project) => (
+          <a class="project-card" href={project.href}>
+            <div class="project-preview">
+              <span>{project.title}</span>
+            </div>
+            <div class="project-body">
+              <h3>{project.title}</h3>
+              <p>{project.description}</p>
+              <div class="pills compact">
+                {project.technologies.map((tech) => <span class="pill">{tech}</span>)}
+              </div>
+            </div>
+          </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="section contact-card" id="contact">
+      <p class="section-label">Contact</p>
+      <h2>Let’s build something useful.</h2>
+      <p class="muted">Have a role, project, or engineering problem worth discussing? I’d love to hear from you.</p>
+      <div class="actions">
+        <a class="button" href={`mailto:${DATA.contact.email}`}>Email me</a>
+        <a class="button secondary" href={DATA.contact.github}>GitHub</a>
+        <a class="button secondary" href={DATA.contact.linkedin}>LinkedIn</a>
+      </div>
+    </section>
+  </main>
 </BaseLayout>
