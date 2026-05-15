@@ -11,7 +11,10 @@ import { DATA } from '../data/resume';
         <h1>Hi, I’m {DATA.name.split(' ')[0]}.</h1>
         <p class="lede">{DATA.description}</p>
       </div>
-      <div class="avatar" aria-hidden="true">{DATA.initials}</div>
+      <picture class="avatar">
+        <source srcset={DATA.avatar.srcset} sizes={DATA.avatar.sizes} type="image/webp" />
+        <img src={DATA.avatar.src} alt={`Headshot of ${DATA.name}`} width="120" height="120" decoding="async" fetchpriority="high" />
+      </picture>
     </section>
 
     <section class="section" id="about">
@@ -63,7 +66,18 @@ import { DATA } from '../data/resume';
         {DATA.projects.map((project) => (
           <a class="project-card" href={project.href}>
             <div class="project-preview">
-              <span>{project.title}</span>
+              {'image' in project ? (
+                <img
+                  src={project.image.src}
+                  srcset={project.image.srcset}
+                  sizes={project.image.sizes}
+                  alt={project.image.alt}
+                  loading="lazy"
+                  decoding="async"
+                />
+              ) : (
+                <span>{project.title}</span>
+              )}
             </div>
             <div class="project-body">
               <h3>{project.title}</h3>

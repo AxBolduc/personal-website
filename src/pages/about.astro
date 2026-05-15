@@ -11,7 +11,10 @@ import { DATA } from '../data/resume';
         <h1>{DATA.name}</h1>
         <p class="lede">{DATA.summary}</p>
       </div>
-      <div class="avatar" aria-hidden="true">{DATA.initials}</div>
+      <picture class="avatar">
+        <source srcset={DATA.avatar.srcset} sizes={DATA.avatar.sizes} type="image/webp" />
+        <img src={DATA.avatar.src} alt={`Headshot of ${DATA.name}`} width="120" height="120" decoding="async" loading="lazy" />
+      </picture>
     </section>
   </main>
 </BaseLayout>

@@ -4,6 +4,11 @@ export const DATA = {
   role: "Full Stack Software Engineer",
   location: "Durham, NC",
   url: "https://axbolduc.com",
+  avatar: {
+    src: "/me-avatar-320.webp",
+    srcset: "/me-avatar-320.webp 320w, /me-avatar-640.webp 640w",
+    sizes: "(max-width: 680px) 96px, 120px",
+  },
   description:
     "Software Engineer with 3+ years of experience building scalable backend systems and full-stack applications.",
   summary:
@@ -93,6 +98,12 @@ export const DATA = {
         "A terminal-based UI application for browsing Major League Baseball games and statistics across past and present seasons.",
       technologies: ["Go", "REST APIs", "Terminal UI"],
       href: "https://github.com/AxBolduc/gomlb",
+      image: {
+        src: "/gomlb-header-640.webp",
+        srcset: "/gomlb-header-640.webp 640w, /gomlb-header-960.webp 960w",
+        sizes: "(max-width: 680px) calc(100vw - 3rem), 336px",
+        alt: "Gomlb terminal UI project screenshot",
+      },
       highlights: [
         "Integrated with Major League Baseball’s REST API to retrieve complex game, team, and player data.",
         "Designed intuitive terminal interfaces for exploring baseball statistics interactively.",
