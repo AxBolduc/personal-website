@@ -2,6 +2,7 @@
   "name": "personal-site",
   "type": "module",
   "version": "0.0.1",
+  "packageManager": "pnpm@11.0.8",
   "engines": {
     "node": ">=22.12.0"
   },
@@ -18,5 +19,12 @@
   "devDependencies": {
     "@astrojs/cloudflare": "^13.5.1",
     "wrangler": "^4.92.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp",
+      "workerd"
+    ]
   }
 }
