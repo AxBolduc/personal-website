@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Personal website and software engineering portfolio.' } = Astro.props;
+const siteTitle = `${title} | Alex Bolduc`;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{siteTitle}</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="/">Alex Bolduc</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="/about">About</a>
+        <a href="/projects">Projects</a>
+        <a href="/experience">Experience</a>
+        <a href="/contact">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>© {new Date().getFullYear()} Alex Bolduc. Built with Astro and deployed on Cloudflare Workers.</p>
+    </footer>
+  </body>
+</html>
