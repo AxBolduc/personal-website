@@ -10,11 +10,17 @@ import { DATA } from '../data/resume';
       <h1>Experience</h1>
       <div class="timeline">
         {DATA.work.map((job) => (
-          <article class="timeline-item">
+          <article class="timeline-item detailed">
             <div>
               <h3>{job.title}</h3>
-              <p class="muted">{job.company}</p>
+              <p class="muted">{job.company} · {job.location}</p>
               <p>{job.description}</p>
+              <ul class="highlights">
+                {job.highlights.map((highlight) => <li>{highlight}</li>)}
+              </ul>
+              <div class="pills compact">
+                {job.technologies.map((tech) => <span class="pill">{tech}</span>)}
+              </div>
             </div>
             <span class="dates">{job.start} — {job.end}</span>
           </article>

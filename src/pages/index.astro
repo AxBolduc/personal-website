@@ -23,11 +23,17 @@ import { DATA } from '../data/resume';
       <h2>Work Experience</h2>
       <div class="timeline">
         {DATA.work.map((job) => (
-          <article class="timeline-item">
+          <article class="timeline-item detailed">
             <div>
               <h3>{job.title}</h3>
-              <p class="muted">{job.company}</p>
+              <p class="muted">{job.company} · {job.location}</p>
               <p>{job.description}</p>
+              <ul class="highlights">
+                {job.highlights.slice(0, 3).map((highlight) => <li>{highlight}</li>)}
+              </ul>
+              <div class="pills compact">
+                {job.technologies.map((tech) => <span class="pill">{tech}</span>)}
+              </div>
             </div>
             <span class="dates">{job.start} — {job.end}</span>
           </article>
@@ -37,8 +43,15 @@ import { DATA } from '../data/resume';
 
     <section class="section" id="skills">
       <h2>Skills</h2>
-      <div class="pills">
-        {DATA.skills.map((skill) => <span class="pill">{skill}</span>)}
+      <div class="skill-groups">
+        {DATA.skillGroups.map((group) => (
+          <article class="skill-group">
+            <h3>{group.label}</h3>
+            <div class="pills compact">
+              {group.items.map((skill) => <span class="pill">{skill}</span>)}
+            </div>
+          </article>
+        ))}
       </div>
     </section>
 
@@ -55,11 +68,29 @@ import { DATA } from '../data/resume';
             <div class="project-body">
               <h3>{project.title}</h3>
               <p>{project.description}</p>
+              <ul class="highlights compact-list">
+                {project.highlights.map((highlight) => <li>{highlight}</li>)}
+              </ul>
               <div class="pills compact">
                 {project.technologies.map((tech) => <span class="pill">{tech}</span>)}
               </div>
             </div>
           </a>
+        ))}
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <h2>Education</h2>
+      <div class="timeline">
+        {DATA.education.map((item) => (
+          <article class="timeline-item">
+            <div>
+              <h3>{item.school}</h3>
+              <p class="muted">{item.degree} · {item.detail}</p>
+            </div>
+            <span class="dates">{item.start} — {item.end}</span>
+          </article>
         ))}
       </div>
     </section>
